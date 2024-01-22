@@ -1,0 +1,18 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Nome</th>
+      <th>Cpf</th>
+      <th>Data de Nascimento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pessoa of pessoas$ | async">
+      <td>{{ pessoa.id }}</td>
+      <td>{{ pessoa.nome }}</td>
+      <td>{{ pessoa.cpf }}</td>
+      <td>{{ pessoa.data_nascimento | date : "dd/MM/yyyy" }}</td>
+    </tr>
+  </tbody>
+</table>

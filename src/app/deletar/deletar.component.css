@@ -1,0 +1,8 @@
+form {
+  width: 500px !important;
+  margin: 30px !important;
+  text-align: center;
+}
+input {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,18 @@
+nav {
+  background-color: black !important;
+}
+.button-nav {
+  color: white !important;
+  cursor: pointer;
+}
+.brand-navbar {
+  color: white !important;
+  font-style: italic;
+  font-weight: 100;
+  text-decoration: none !important;
+}
+.pagina-formulario {
+  text-align: center;
+  width: 600px !important;
+  margin: 30px auto !important;
+}

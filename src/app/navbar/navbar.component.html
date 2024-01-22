@@ -1,0 +1,62 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="brand-navbar">CRUD Elotech</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    ></button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a
+            class="nav-link active button-nav"
+            aria-current="page"
+            (click)="toggleFormularioPesquisa()"
+            >Pesquisar</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active button-nav"
+            aria-current="page"
+            (click)="toggleFormularioCadastro()"
+            >Cadastrar</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active button-nav"
+            aria-current="page"
+            (click)="toggleFormularioDeleta()"
+            >Deletar</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active button-nav"
+            aria-current="page"
+            (click)="toggleFormularioEdita()"
+            >Editar</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="pagina-formulario">
+  <app-pesquisar *ngIf="mostrarFormularioPesquisa"></app-pesquisar>
+</div>
+<div class="pagina-formulario">
+  <app-cadastrar *ngIf="mostrarFormularioCadastro"></app-cadastrar>
+</div>
+<div class="pagina-formulario">
+  <app-deletar *ngIf="mostrarFormularioDeleta"></app-deletar>
+</div>
+<div class="pagina-formulario">
+  <app-editar *ngIf="mostrarFormularioEdita"></app-editar>
+</div>
